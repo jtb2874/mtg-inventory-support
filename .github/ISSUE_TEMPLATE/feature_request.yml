@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest something MTG Inv should do.
+labels: ["feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: This is a public page - please don't include passwords, tokens or your email address.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Web
+        - iOS
+        - Android
+        - All of them
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version / build
+      description: Optional.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The need behind the idea.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or mock-up (optional)
